@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 word = "Holberton"
-# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
-word_first_3 = word[0:3]
-word_last_2 = word[7:9]
-middle_word[1:8]
+word_first_3 = word[:3]  # Extract the first 3 letters
+word_last_2 = word[-2:]  # Extract the last 2 letters
+middle_start = (len(word) - 2) // 2
+middle_end = middle_start + 2
+middle_word = word[middle_start:middle_end]  # Extract the middle word
 print(f"First 3 letters: {word_first_3}")
 print(f"Last 2 letters: {word_last_2}")
 print(f"Middle word: {middle_word}")
