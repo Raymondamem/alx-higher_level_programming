@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-mport random
+import random
 number = random.randint(-10000, 10000)
 if number < 0:
     last_digit = abs(number) % 10
