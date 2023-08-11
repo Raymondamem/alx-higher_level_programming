@@ -9,4 +9,4 @@ def fizzbuzz():
             print("Buzz", end=" ")
         else:
             print(num, end=" ")
-    print()  # Print a newline character at the end
+    print()
