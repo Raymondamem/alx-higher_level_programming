@@ -14,3 +14,4 @@ if __name__ == "__main__":
     _a = int(sys.argv[1])
     _b = int(sys.argv[3])
     print("{} {} {} = {}".format(_a, sys.argv[2], _b, ops[sys.argv[2]](_a, _b)))
+print()
