@@ -4,9 +4,9 @@ This module defines a Square class.
 """
 class Square:
     """This class is a square.
-    Attribute:
+    Attributeis:
         None
-    Method:
+    Methods:
         None
     """
     pass
