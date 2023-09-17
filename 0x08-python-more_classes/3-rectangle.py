@@ -34,17 +34,20 @@ class Rectangle:
 
     def perimeter(self):
         if self.__width == 0 or self.__height == 0:
-            return 0
+            return (0)
         return (2 * (self.__width + self.__height))
 
     def __str__(self):
+        """Return the printable representation of the Rectangle.
+
+        Represents the rectangle with the # character.
+        """
         if self.__width == 0 or self.__height == 0:
             return ("")
-        rectangle_str = ""
-        for _ in range(self.__height):
-            rectangle_str += "#" * self.__width + "\n"
-        return (rectangle_str.rstrip())  # Remove trailing newline
 
-    def __repr__(self):
-        return "Rectangle({}, {})".format(self.__width, self.__height)
-
+        rect = []
+        for i in range(self.__height):
+            [rect.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
