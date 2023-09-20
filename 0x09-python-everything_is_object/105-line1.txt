@@ -1,10 +1,1 @@
-0
-In CPython, the implementation of Python 3, small integers in the range of -5 to 256 are preallocated and cached for performance reasons. These integers are created when the Python interpreter starts and remain in memory throughout the program's execution. This optimization is often referred to as "integer interning" or "small integer caching."
-
-The values -5 to 256 are considered "small" integers, and they are stored in an internal array for quick access. Whenever you create a new integer object with a value in this range, Python doesn't create a new object but instead returns a reference to the existing cached object. This behavior is designed to save memory and improve performance.
-
-In your code, when you execute line 2 (`print("Love")`), there are no integer objects involved, so no new integer objects are created. The small integer caching mechanism doesn't come into play here because you are working with string literals, not integers.
-
-Therefore, before the execution of line 2, the number of int objects that have been created and are still in memory is the same as when the Python interpreter started, which includes the small integers in the range of -5 to 256, as well as any other integers that may have been created by the interpreter itself. This number depends on the specific implementation of Python and may vary between different Python versions and configurations.
-
-In summary, for your code snippet, the answer is that no new integer objects are created before the execution of line 2, and the small integer caching mechanism does not apply to string literals.
+262
