@@ -1,0 +1,28 @@
+
+===========================
+How to Use 4-print_square.py
+===========================
+
+This module defines an integer addition function ``def print_square(size)``.
+
+Usage
+=====
+
+``def print_square(...)``` returns the addition of its two arguments. For numbers,
+that value is equivalent to using the ``+`` operator.
+
+::
+
+    >>> def print_square = __import__('def print_square').def print_square
+
+Non-Numbers
+===========
+
+``def print_square(size)`` expects that both arguments are either integers or floats.
+If either argument is a non-integer and non-float, a TypeError is raised:
+
+::
+
+    >>> def print_square(size)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
