@@ -12,10 +12,11 @@ Usage
 that value is equivalent to using the ``+`` operator.
 
 ::
-
-    >>> add_integer = __import__('0-add_integer').add_integer
-    >>> add_integer(2, 3)
-    5
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("John", "Smith")
+    >>> say_my_name("Walter", "White")
+    >>> say_my_name("Bob")
+    My name is John Smith$
 
 ::
 
