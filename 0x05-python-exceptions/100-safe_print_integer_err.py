@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+mport sys
+def safe_print_integer_err(value):
 """Prints an in integer with "{:d}".format().
 
     If a ValueError message is caught, a corresponding
@@ -12,8 +14,6 @@
         If a TypeError or ValueError occurs - False.
         Otherwise - True.
     """
-mport sys
-def safe_print_integer_err(value):
     try:
         print("{:d}".format(value))
         return (True)
