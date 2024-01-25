@@ -1,6 +1,18 @@
 #!/usr/bin/python3
 
-import sys
+"""Prints an in integer with "{:d}".format().
+
+    If a ValueError message is caught, a corresponding
+    message is printed to standard error.
+
+    Args:
+        value (int): The integer to print.
+
+    Returns:
+        If a TypeError or ValueError occurs - False.
+        Otherwise - True.
+    """
+mport sys
 def safe_print_integer_err(value):
     try:
         print("{:d}".format(value))
