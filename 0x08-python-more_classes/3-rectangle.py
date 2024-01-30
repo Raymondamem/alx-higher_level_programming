@@ -3,7 +3,13 @@
 
 
 class Rectangle:
-    """Represent a rectangle."""
+    """Represent a rectangle.
+
+    Attributes:
+        number_of_instances (int): The number of Rectangle instances.
+    """
+
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
         """Initialize a new Rectangle.
@@ -12,6 +18,7 @@ class Rectangle:
             width (int): The width of the new rectangle.
             height (int): The height of the new rectangle.
         """
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -43,13 +50,13 @@ class Rectangle:
 
     def area(self):
         """Return the area of the Rectangle."""
-        return self.__width * self.__height
+        return (self.__width * self.__height)
 
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
-            return 0
-        return 2 * (self.__width + self.__height)
+            return (0)
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
         """Return the printable representation of the Rectangle.
@@ -57,8 +64,11 @@ class Rectangle:
         Represents the rectangle with the # character.
         """
         if self.__width == 0 or self.__height == 0:
-            return ""
-        
-        rect = ["#" * self.__width for _ in range(self.__height)]
-        return "\n".join(rect)
+            return ("")
 
+        rt = []
+        for i in range(self.__height):
+            [rt.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                rt.append("\n")
+        return ("".join(rt))
